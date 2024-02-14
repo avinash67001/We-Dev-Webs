@@ -28,10 +28,31 @@ img {
 
 /* Hero Section */
 
-.hero{
+.hero {
   background-color: black;
   height: 70vh;
   position: relative;
   z-index: -1;
   top: -30px;
+}
+
+.custom-shape-divider-bottom-1707923524 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1707923524 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 191px;
+}
+
+.custom-shape-divider-bottom-1707923524 .shape-fill {
+  fill: #FFFFFF;
 }
