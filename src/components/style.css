@@ -1,0 +1,37 @@
+/* Navbar CSS */
+img {
+  margin-top: 17px;
+  height: 17rem;
+}
+.pages {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.pages a:nth-child(even) {
+  font-size: x-large;
+  color: black;
+  transition: color 0.5s;
+}
+
+.pages a:nth-child(odd) {
+  margin: 2px;
+  font-size: xx-large;
+  color: white;
+  transition: color 0.7s;
+}
+
+.pages a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* Hero Section */
+
+.hero{
+  background-color: black;
+  height: 70vh;
+  position: relative;
+  z-index: -1;
+  top: -30px;
+}
