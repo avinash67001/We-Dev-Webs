@@ -1,58 +1,144 @@
-/* Navbar CSS */
-img {
-  margin-top: 17px;
-  height: 17rem;
-}
-.pages {
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-.pages a:nth-child(even) {
-  font-size: x-large;
-  color: black;
-  transition: color 0.5s;
+@font-face {
+  font-family: LTRemark;
+  src: url(../fonts/LTRemark-Bold.otf);
 }
 
-.pages a:nth-child(odd) {
-  margin: 2px;
-  font-size: xx-large;
-  color: white;
-  transition: color 0.7s;
+body {
+  background-color: #1A1920;
+}
+
+/* Navbar CSS */
+
+.pages a {
+  color: black;
+  font-weight:500;
+  font-size: large;
+  transition: color 0.5s ease-in-out;
 }
 
 .pages a:hover {
-  text-decoration: none;
   color: red;
+  text-decoration: none;
 }
 
-/* Hero Section */
 
-.hero {
-  background-color: black;
+/* Home Page */
+.welcome {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.welcome p {
+  font-family: "Vollkorn SC", serif;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(10, 155, 10);
+  margin-top: -12px;
+}
+.welcome p:nth-child(1){
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.welcome h1 {
+  color:rgb(175, 219, 236);
+  font-size: 55px;
+  font-family: LTRemark;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.welcome h1::after{
+  content: "";
+  direction: column;
+} 
+
+.sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section1 {
   height: 70vh;
-  position: relative;
-  z-index: -1;
-  top: -30px;
+  width: 50vw;
+  /* background-color: red; */
 }
 
-.custom-shape-divider-bottom-1707923524 {
+.sections img {
+  height: 70vh;
+  width: 30vw;
+}
+
+
+.pricing-plans {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  position: relative;
+}
+
+.plan-card h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.plan-card .price {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-card ul li {
+  margin-bottom: 10px;
+}
+
+.plan-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-card button:hover {
+  background-color: #0056b3;
+}
+
+.popular-tag {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1707923524 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 191px;
-}
-
-.custom-shape-divider-bottom-1707923524 .shape-fill {
-  fill: #FFFFFF;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
